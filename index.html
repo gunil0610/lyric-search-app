@@ -1,30 +1,40 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <title>Lyrics Search App</title>
   </head>
-  <body>
-    <header>
-      <h1>LyricsSearch</h1>
+  <body class="m-0 bg-white font-sans">
+    <header
+      class="relative flex flex-col items-center justify-center bg-[url(https://images.unsplash.com/photo-1494232410401-ad00d5433cfa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)] bg-cover bg-center bg-no-repeat py-24 px-0 text-white *:z-10 after:absolute after:top-0 after:left-0 after:h-full after:w-full after:bg-[rgba(0,0,0,0.6)] after:content-['']"
+    >
+      <h1 class="m-0 mb-8 text-3xl font-bold">LyricsSearch</h1>
 
-      <form id="form">
+      <form id="form" class="relative w-[500px] max-w-full">
         <input
+          class="w-full rounded-[50px] border-none bg-white py-4 px-8 text-black focus:outline-none"
           type="text"
           id="search"
           placeholder="Enter artist or song name..."
         />
-        <button>Search</button>
+        <button
+          class="absolute top-1 right-1 cursor-pointer rounded-[50px] border-none bg-[#4e89ae] py-3 px-8 text-white focus:outline-none"
+        >
+          Search
+        </button>
       </form>
     </header>
 
-    <div id="result" class="container">
-      <p>Results will be displayed here</p>
+    <!-- container -->
+    <div id="result" class="my-8 mx-auto w-[500px] max-w-full">
+      <p class="text-center">Results will be displayed here</p>
     </div>
-
-    <div id="more" class="container centered"></div>
+    <!-- container -->
+    <div
+      id="more"
+      class="my-8 mx-auto flex w-[500px] max-w-full justify-center"
+    ></div>
 
     <script src="script.js"></script>
     <script type="module" src="/src/main.ts"></script>
