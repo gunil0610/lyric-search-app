@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+button {
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
